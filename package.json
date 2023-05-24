@@ -1,0 +1,24 @@
+{
+  "name": "open-weather-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "angular-i": "npm i -g @angular/cli",
+    "gitconfig-ronaldo": "git config --local user.name \"Ronaldo Junior\" && git config --local user.email \"ronaldosjr2005@gmail.com\"",
+    "all-ronaldo": "npm run gitconfig-ronaldo && npm run angular-i"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronaldo-Junior1/weather-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronaldo-Junior1/weather-web/issues"
+  },
+  "homepage": "https://github.com/Ronaldo-Junior1/weather-web#readme"
+}
