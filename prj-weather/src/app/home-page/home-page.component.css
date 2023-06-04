@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .weather-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #inputSearch{
+   outline: none;
+   
+  }
+  
+  .info_card{
+    border: 2px solid;
+    width: 30%;
+    height: 50%;
+    padding: 30px;
+  }

@@ -1,12 +1,18 @@
-<input type="text" [(ngModel)]="cityName" name="cityName" placeholder="Digite o nome da cidade">
-<button (click)="searchCity()">Pesquisar</button>
+<div class="container">
+    <div class="info_card">
 
-<div *ngIf="weatherData">
-    <h2>{{ weatherData.name }}</h2>
-    <p>Temperatura: {{ weatherData.main.temp }}</p>
-    <p>Pressão: {{ weatherData.main.pressure }}</p>
-    <p>Umidade: {{ weatherData.main.humidity }}</p>
-    <p>Sensação Termica: {{weatherData.main.feels_like}}</p>
+    <div class="weather-info">
+      <h2>Cidade: {{ weatherData?.name }}</h2>
+      <h3>Temperatura: {{ roundTemperature(weatherData?.main.temp) }}°C</h3>
+      <img *ngIf="weatherIconUrl" [src]="weatherIconUrl" alt="Weather Icon" class="weather-icon">
+    </div>
     
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    
+    <input type="text" [(ngModel)]="cityName" placeholder="Digite o nome da cidade" id="inputSearch">
+    <button (click)="searchCity()" name="buttonSearch">Pesquisar</button>
+</div>
   </div>
   
