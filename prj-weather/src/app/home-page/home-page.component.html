@@ -1,2 +1,12 @@
 <input type="text" [(ngModel)]="cityName" name="cityName" placeholder="Digite o nome da cidade">
 <button (click)="searchCity()">Pesquisar</button>
+
+<div *ngIf="weatherData">
+    <h2>{{ weatherData.name }}</h2>
+    <p>Temperatura: {{ weatherData.main.temp }}</p>
+    <p>Pressão: {{ weatherData.main.pressure }}</p>
+    <p>Umidade: {{ weatherData.main.humidity }}</p>
+    <p>Sensação Termica: {{weatherData.main.feels_like}}</p>
+    
+  </div>
+  
