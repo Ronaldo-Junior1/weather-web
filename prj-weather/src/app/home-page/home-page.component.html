@@ -1,1 +1,18 @@
-<p>home-page works!</p>
+<div class="container">
+    <div class="info_card">
+
+    <div class="weather-info">
+      <h2>Cidade: {{ weatherData?.name }}</h2>
+      <h3>Temperatura: {{ roundTemperature(weatherData?.main.temp) }}°C</h3>
+      <img *ngIf="weatherIconUrl" [src]="weatherIconUrl" alt="Weather Icon" class="weather-icon">
+    </div>
+    
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    
+    <input type="text" [(ngModel)]="cityName" placeholder="Digite o nome da cidade" id="inputSearch">
+    <button (click)="searchCity()" name="buttonSearch">Pesquisar</button>
+</div>
+  </div>
+  

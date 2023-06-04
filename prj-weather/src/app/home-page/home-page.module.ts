@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HomePageRoutingModule } from './home-page-routing.module';
 
@@ -8,7 +9,8 @@ import { HomePageRoutingModule } from './home-page-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HttpClientModule
   ]
 })
 export class HomePageModule { }
