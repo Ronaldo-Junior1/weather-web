@@ -5,6 +5,7 @@
       <h2>Cidade: {{ weatherData?.name }}</h2>
       <h3>Temperatura: {{ roundTemperature(weatherData?.main.temp) }}°C</h3>
       <img *ngIf="weatherIconUrl" [src]="weatherIconUrl" alt="Weather Icon" class="weather-icon">
+      <img *ngIf="countryFlagUrl" [src]="countryFlagUrl" alt="Flag Icon" class="flag-icon">
     </div>
     
     <div *ngIf="errorMessage" class="error-message">
